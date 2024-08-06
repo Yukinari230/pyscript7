@@ -19,9 +19,10 @@ from matplotlib.ticker import LinearLocator
 import numpy as np
 
 
-plt.rcParams["figure.figsize"] = (8, 8)
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+
+fig.set_size_inches(6,6)
 
 # Make data.
 X = np.arange(-5, 5, 0.2)
